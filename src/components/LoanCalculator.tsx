@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Calculator, RefreshCw } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -46,7 +45,6 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
     // Generate amortization schedule
     const schedule = [];
     let remainingBalance = principal;
-    const monthlyRate = rate[0] / 100 / 12;
     const payment = monthlyPayment || (principal * (monthlyRate * Math.pow(1 + monthlyRate, months)) / 
                                       (Math.pow(1 + monthlyRate, months) - 1));
 
