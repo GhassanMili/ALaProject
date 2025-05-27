@@ -17,17 +17,19 @@ const Index = () => {
   const [loanData, setLoanData] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-orange-50">
       {/* Header */}
-      <header className="bg-white/80 backdrop-blur-md border-b border-blue-100 sticky top-0 z-50">
+      <header className="bg-white/90 backdrop-blur-md border-b border-orange-100 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/6c36c5e0-4d13-479b-ad32-5b89f5a86265.png" 
+                alt="BIAT Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
-                <h1 className="text-xl font-bold text-gray-900">CreditPro</h1>
+                <h1 className="text-xl font-bold text-gray-900">BIAT IT</h1>
                 <p className="text-sm text-gray-600">Plateforme de Crédit Bancaire</p>
               </div>
             </div>
@@ -57,7 +59,7 @@ const Index = () => {
             Simulez votre <span className="text-blue-600">crédit</span> en temps réel
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Plateforme moderne de gestion des prêts et garanties bancaires. 
+            Plateforme moderne de gestion des prêts et garanties bancaires BIAT. 
             Calculez, simulez et gérez vos demandes de crédit facilement.
           </p>
         </div>
@@ -142,9 +144,9 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/50 backdrop-blur-sm border-green-100">
+          <Card className="bg-white/50 backdrop-blur-sm border-orange-100">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-green-600">
+              <CardTitle className="flex items-center gap-2 text-orange-600">
                 <FileText className="w-5 h-5" />
                 Gestion Numérique
               </CardTitle>
@@ -156,9 +158,9 @@ const Index = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-white/50 backdrop-blur-sm border-purple-100">
+          <Card className="bg-white/50 backdrop-blur-sm border-blue-100">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-purple-600">
+              <CardTitle className="flex items-center gap-2 text-blue-600">
                 <TrendingUp className="w-5 h-5" />
                 Suivi Avancé
               </CardTitle>
@@ -178,13 +180,15 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <TrendingUp className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xl font-bold">CreditPro</span>
+                <img 
+                  src="/lovable-uploads/6c36c5e0-4d13-479b-ad32-5b89f5a86265.png" 
+                  alt="BIAT Logo" 
+                  className="w-8 h-8 object-contain"
+                />
+                <span className="text-xl font-bold">BIAT IT</span>
               </div>
               <p className="text-gray-400">
-                Plateforme moderne de gestion des crédits et garanties bancaires.
+                Plateforme moderne de gestion des crédits et garanties bancaires BIAT.
               </p>
             </div>
             <div>
@@ -211,7 +215,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 CreditPro. Tous droits réservés.</p>
+            <p>&copy; 2024 BIAT IT. Tous droits réservés.</p>
           </div>
         </div>
       </footer>

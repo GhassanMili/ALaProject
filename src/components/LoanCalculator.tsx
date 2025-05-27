@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Calculator, RefreshCw } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -101,11 +102,11 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
   };
 
   return (
-    <Card className="bg-white/80 backdrop-blur-sm border-blue-100">
+    <Card className="bg-white/80 backdrop-blur-sm border-orange-100">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-blue-600">
           <Calculator className="w-5 h-5" />
-          Simulateur de Crédit
+          Simulateur de Crédit BIAT
         </CardTitle>
         <CardDescription>
           Calculez vos mensualités en temps réel
@@ -131,7 +132,7 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
         <div className="space-y-3">
           <div className="flex justify-between items-center">
             <Label>Montant du crédit</Label>
-            <span className="text-sm font-medium text-blue-600">
+            <span className="text-sm font-medium text-orange-600">
               {formatCurrency(amount[0])}
             </span>
           </div>
@@ -153,7 +154,7 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
         <div className="space-y-3">
           <div className="flex justify-between items-center">
             <Label>Durée (mois)</Label>
-            <span className="text-sm font-medium text-blue-600">
+            <span className="text-sm font-medium text-orange-600">
               {duration[0]} mois ({(duration[0] / 12).toFixed(1)} ans)
             </span>
           </div>
@@ -175,7 +176,7 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
         <div className="space-y-3">
           <div className="flex justify-between items-center">
             <Label>Taux d'intérêt (%)</Label>
-            <span className="text-sm font-medium text-blue-600">
+            <span className="text-sm font-medium text-orange-600">
               {rate[0]}%
             </span>
           </div>
@@ -209,7 +210,7 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
         </div>
 
         {/* Results */}
-        <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg p-4 space-y-3">
+        <div className="bg-gradient-to-r from-blue-50 to-orange-50 rounded-lg p-4 space-y-3">
           <h3 className="font-semibold text-gray-900 mb-3">Résultats de la simulation</h3>
           
           <div className="grid grid-cols-2 gap-4">
@@ -221,7 +222,7 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
             </div>
             
             <div className="text-center p-3 bg-white rounded-lg">
-              <div className="text-2xl font-bold text-green-600">
+              <div className="text-2xl font-bold text-orange-600">
                 {formatCurrency(totalCost)}
               </div>
               <div className="text-sm text-gray-600">Coût total</div>
@@ -229,7 +230,7 @@ const LoanCalculator = ({ onCalculate }: LoanCalculatorProps) => {
           </div>
 
           <div className="text-center p-3 bg-white rounded-lg">
-            <div className="text-xl font-bold text-orange-600">
+            <div className="text-xl font-bold text-blue-600">
               {formatCurrency(totalInterest)}
             </div>
             <div className="text-sm text-gray-600">Total des intérêts</div>
