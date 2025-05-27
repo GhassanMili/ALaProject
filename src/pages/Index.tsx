@@ -24,7 +24,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/6c36c5e0-4d13-479b-ad32-5b89f5a86265.png" 
+                src="/lovable-uploads/e1b9c36b-ea15-4ff0-9f62-59fb10afa8ca.png" 
                 alt="BIAT Logo" 
                 className="w-12 h-12 object-contain"
               />
@@ -189,7 +189,7 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="/lovable-uploads/6c36c5e0-4d13-479b-ad32-5b89f5a86265.png" 
+                  src="/lovable-uploads/e1b9c36b-ea15-4ff0-9f62-59fb10afa8ca.png" 
                   alt="BIAT Logo" 
                   className="w-8 h-8 object-contain"
                 />
