@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Calculator, TrendingUp, Users, FileText, Phone, Mail, Download, Calendar } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,6 +10,7 @@ import LoanCalculator from '@/components/LoanCalculator';
 import AmortizationTable from '@/components/AmortizationTable';
 import ContactForm from '@/components/ContactForm';
 import Dashboard from '@/components/Dashboard';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [activeTab, setActiveTab] = useState('simulator');
@@ -34,18 +34,26 @@ const Index = () => {
               </div>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
-              <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
-                Accueil
-              </Button>
-              <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
-                Services
-              </Button>
-              <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
-                Contact
-              </Button>
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white">
-                Connexion
-              </Button>
+              <Link to="/">
+                <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
+                  Accueil
+                </Button>
+              </Link>
+              <Link to="/services">
+                <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
+                  Services
+                </Button>
+              </Link>
+              <Link to="/contact">
+                <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
+                  Contact
+                </Button>
+              </Link>
+              <Link to="/login">
+                <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+                  Connexion
+                </Button>
+              </Link>
             </nav>
           </div>
         </div>
@@ -188,7 +196,7 @@ const Index = () => {
                 <span className="text-xl font-bold">BIAT IT</span>
               </div>
               <p className="text-gray-400">
-                Plateforme moderne de gestion des crédits et garanties bancaires BIAT.
+                Division IT de la Banque Internationale Arabe de Tunisie, spécialisée dans les solutions digitales de crédit et financement.
               </p>
             </div>
             <div>
@@ -205,17 +213,17 @@ const Index = () => {
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <span>(+216) 73 821 801</span>
+                  <span>(+216) 71 340 000</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>h.sammouda@elfaraj.com</span>
+                  <span>info@biat.com.tn</span>
                 </div>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 BIAT IT. Tous droits réservés.</p>
+            <p>&copy; 2024 BIAT IT - Banque Internationale Arabe de Tunisie. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
